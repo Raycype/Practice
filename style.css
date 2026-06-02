@@ -107,6 +107,7 @@ ol li::marker{
 
 table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 td {
