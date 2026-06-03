@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(214, 17%, 92%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+}
+
+.main {
+  color: hsl(214, 17%, 92%);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  gap: 20px;
+  font-size: 13px;
+  align-items: stretch;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.profile p {
+  margin-bottom: 5px;
+}
+
+.profile p:first-child {
+  font-weight: 500;
+}
+
+.profile p:last-child {
+  color: hsl(0, 0%, 81%);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.first {
+  background-color: hsl(263, 55%, 52%);
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  gap: 15px;
+  box-shadow: 15px 15px 30px darkgrey;
+}
+
+.second {
+  background-color: hsl(217, 19%, 35%);
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  gap: 15px;
+  box-shadow: 15px 15px 30px darkgrey;
+}
+
+.third {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(224, 10%, 45%);
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  gap: 15px;
+  box-shadow: 15px 15px 30px darkgrey;
+}
+
+.fourth {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  gap: 15px;
+  box-shadow: 15px 15px 30px darkgrey;
+}
+
+.fifth {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(224, 10%, 45%);
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  gap: 15px;
+  box-shadow: 15px 15px 30px darkgrey;
+}
+
+@media (min-width: 600px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "first first second fifth"
+      "third fourth fourth fifth";
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .first {
+    grid-area: first;
+    background-image: url("https://res.cloudinary.com/ddhjvafed/image/upload/v1780499026/bg-pattern-quotation_wpxfjy.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .second {
+    grid-area: second;
+  }
+
+  .third {
+    grid-area: third;
+  }
+
+  .fourth {
+    grid-area: fourth;
+  }
+
+  .fifth {
+    grid-area: fifth;
+  }
+}
